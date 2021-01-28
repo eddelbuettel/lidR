@@ -2,7 +2,7 @@ If you are viewing this file on CRAN, please check [the latest news on GitHub](h
 
 ## lidR v3.1.2 (Release date: ...)
 
-- Fix: `catalog_apply()` now works with cluster plan `plan(cluster)` meaning that it can be used on HPC e.g. with MDPI. We took advantage of this bug to better detect the parallel strategy used and disable or not OpenMP. When `lidR` is not able to figure out if the strategy involves multiple machines or multiple cores of a single machine, then a warning is thrown and OpenMP is disabled by security.
+- Fix: `catalog_apply()` now works with cluster plan `plan(cluster)` meaning that it can be used on HPC e.g. with MPI. We took advantage of this bug to better detect the parallel strategy used and disable or not OpenMP. When `lidR` is not able to figure out if the strategy involves multiple machines or multiple cores of a single machine, then a warning is thrown and OpenMP is disabled by security.
 ```r
 The parallel evaluation strategy was no recognized and lidR does not know if OpenMP should be disabled.
 OpenMP has been disabled by security. 
